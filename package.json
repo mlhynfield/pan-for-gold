@@ -1,0 +1,15 @@
+{
+  "name": "pan-for-gold",
+  "version": "0.0.0",
+  "description": "Panning for Gold",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "^3.6.1"
+  },
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "Marcus Hynfield",
+  "license": "MIT"
+}
