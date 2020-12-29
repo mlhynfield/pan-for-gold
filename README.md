@@ -13,7 +13,7 @@ This program compares the ratio of two numbers in the Fibonacci sequence (e.g. 1
 
 - [X] Add [GitHub Actions][2] to continuously build and test project
 - [ ] Consider production deployment options – [Heroku][3]?
-- [ ] Test-drive adding Golden comparison of a given ratio to the golden ratio
+- [X] Test-drive adding Golden comparison of a given ratio to the golden ratio
 - [ ] Add an index.js that iterates through the Fibonacci sequence, stopping when the ratio of sequential pairs matches the golden ratio to 10 significant digits, printing the position reached
 
 [1]: https://en.wikipedia.org/wiki/Golden_ratio
