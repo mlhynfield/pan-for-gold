@@ -1,11 +1,16 @@
 function Index() {
 }
 
+const http = require('http');
+
 var Fibonacci = require('./lib/fibonacci/Fibonacci');
 var Golden = require('./lib/golden/Golden');
 
 var fibonacci = new Fibonacci();
 var golden = new Golden();
+
+const hostname = '127.0.0.1';
+const port = process.env.PORT || 3000;
 
 Index.prototype.fibCloseEnoughToGolden = function() {
   // Iterate through the Fibonacci sequence,
@@ -21,6 +26,16 @@ Index.prototype.fibCloseEnoughToGolden = function() {
 }
 
 module.exports = Index;
+
 var index = new Index();
 
-console.log("Close enough at position " + index.fibCloseEnoughToGolden());
+const server = http.createServer(function(req, res) {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  console.log('We got a request!');
+  res.end("Close enough at position " + index.fibCloseEnoughToGolden());
+});
+
+server.listen(port, hostname, function() {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
