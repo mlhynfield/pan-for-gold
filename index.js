@@ -9,7 +9,6 @@ var Golden = require('./lib/golden/Golden');
 var fibonacci = new Fibonacci();
 var golden = new Golden();
 
-const hostname = '127.0.0.1';
 const port = process.env.PORT || 3000;
 
 Index.prototype.fibCloseEnoughToGolden = function() {
@@ -36,6 +35,6 @@ const server = http.createServer(function(req, res) {
   res.end("Close enough at position " + index.fibCloseEnoughToGolden());
 });
 
-server.listen(port, hostname, function() {
-  console.log(`Server running at http://${hostname}:${port}/`);
+server.listen(port, function() {
+  console.log(`Server running on port ${port}`);
 });
