@@ -8,6 +8,7 @@
     "jasmine": "^3.6.1"
   },
   "scripts": {
+    "start": "node index.js",
     "test": "jasmine"
   },
   "author": "Marcus Hynfield",
