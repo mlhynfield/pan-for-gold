@@ -1,6 +1,6 @@
 {
   "name": "pan-for-gold",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Panning for Gold",
   "main": "index.js",
   "dependencies": {},

@@ -32,7 +32,7 @@ const server = http.createServer(function(req, res) {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
   console.log('We got a request!');
-  res.end("Close enough at position " + index.fibCloseEnoughToGolden());
+  res.end("Ratio of Fibonacci numbers is golden to 10 significant digits at position " + index.fibCloseEnoughToGolden());
 });
 
 server.listen(port, function() {
