@@ -15,6 +15,8 @@ This program compares the ratio of two numbers in the Fibonacci sequence (e.g. 1
 - [X] Consider production deployment options – [Heroku][3]?
 - [X] Test-drive adding Golden comparison of a given ratio to the golden ratio
 - [X] Add an index.js that iterates through the Fibonacci sequence, stopping when the ratio of sequential pairs matches the golden ratio to 10 significant digits, printing the position reached
+- [X] Add Dockerfile to build container image
+- [ ] Consider production deployment to Kubernetes?
 
 [1]: https://en.wikipedia.org/wiki/Golden_ratio
 [2]: https://github.com/features/actions
