@@ -4,7 +4,6 @@
 
 – [Golden Ratio – Wikipedia][1]
 
-
 Two quantities are in the golden ratio if their ratio is the same as the ratio of their sum to the larger of the two quantities.
 
 This program compares the ratio of two numbers in the Fibonacci sequence (e.g. 13/8) to determine how close to the golden ratio this position in the sequence comes.
@@ -16,8 +15,13 @@ This program compares the ratio of two numbers in the Fibonacci sequence (e.g. 1
 - [X] Test-drive adding Golden comparison of a given ratio to the golden ratio
 - [X] Add an index.js that iterates through the Fibonacci sequence, stopping when the ratio of sequential pairs matches the golden ratio to 10 significant digits, printing the position reached
 - [X] Add Dockerfile to build container image
-- [ ] Consider production deployment to Kubernetes?
+- [X] Consider production deployment to Kubernetes - [K3s][4] on [AWS EC2][5]?
+
+To view the infrastructure as code automation used to build and run this project, visit [pan-for-gold-iac][6].
 
 [1]: https://en.wikipedia.org/wiki/Golden_ratio
 [2]: https://github.com/features/actions
 [3]: https://www.heroku.com
+[4]: https://github.com/k3s-io/k3s
+[5]: https://aws.amazon.com/ec2
+[6]: https://github.com/mlhynfield/pan-for-gold-iac
