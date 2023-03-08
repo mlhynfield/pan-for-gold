@@ -6,11 +6,10 @@ WORKDIR /app
 COPY lib lib
 COPY spec spec
 COPY index.js .
-COPY package-lock.json .
 COPY package.json .
 
-RUN npm install
+EXPOSE 3000
 
-RUN npm test
+RUN npm install
 
 CMD ["npm", "start"]
